@@ -4,6 +4,9 @@
 @import "./mixins";
 @import "./functions";
 @import "./menu";
+@import "./about";
+@import "./projects";
+
 body{
     display: flex;
     background-color: $primary-color;
@@ -57,4 +60,8 @@ footer{
     font-size: 1rem;
     padding: 1rem;
     color: set-text-color($primary-color);
+}
+
+.text-secondary{
+    color: $secondary-color;
 }
