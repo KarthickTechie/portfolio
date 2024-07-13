@@ -99,9 +99,6 @@ nav .menu-nav__item {
 nav .menu-nav__item.open {
   transform: translateX(0);
 }
-nav .menu-nav__item.active > a {
-  color: #ff652f;
-}
 nav .menu-nav__link {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -110,6 +107,9 @@ nav .menu-nav__link {
   transition: all 0.3s ease-in-out;
 }
 nav .menu-nav__link:hover {
+  color: #ff652f;
+}
+nav .menu-nav__link.active {
   color: #ff652f;
 }
 
@@ -260,6 +260,86 @@ nav .menu-nav__link:hover {
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.contacts {
+  height: 100%;
+  padding-top: 30vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+}
+.contacts h2 {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  text-decoration: underline;
+}
+.contacts__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+.contacts__list div > i {
+  padding-right: 0.5rem;
+}
+.contacts .social-icons {
+  position: initial;
+  padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background-color: transparent;
+    text-align: right;
+    padding-top: 1rem;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contacts__list {
+    background-color: rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 body {
   display: flex;
   background-color: #272727;

@@ -6,7 +6,8 @@
 @import "./menu";
 @import "./about";
 @import "./projects";
-
+@import "./contacts";
+@import "./responsive";
 body{
     display: flex;
     background-color: $primary-color;

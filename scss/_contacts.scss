@@ -1,0 +1,41 @@
+.contacts{
+    height: 100%;
+    padding-top: 30vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+    ),
+    url('../img/model-1.jpg') center top;
+    background-size: cover;
+
+    h2{
+        margin:2rem 0;
+        padding: 1rem 0;
+        text-decoration: underline;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.5rem;
+
+        div > i{
+            padding-right: 0.5rem;
+        }
+    }
+
+    .social-icons{
+        position: initial;
+        padding-top:0.5rem;
+    }
+
+   
+}
+
